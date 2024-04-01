@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Bahn.de Analyzer",
     "version": "1.0.0",
-    "description": "Zeigt Verspätungsstatistiken für Züge auf der Buchungsseite von bahn.de",   
+    "description": "Zeigt Verspätungsstatistiken für Züge auf der Buchungsseite von bahn.de",
     "permissions": [
       "scripting"
     ],
