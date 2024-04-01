@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Bahn.de Analyzer",
+    "version": "1.0.0",
+    "description": "Zeigt Verspätungsstatistiken für Züge auf der Buchungsseite von bahn.de",
+    "permissions": [
+      "scripting"
+    ],
+    "host_permissions": ["*://*.bahn.de/buchung/fahrplan/suche"],
+    "background": {
+      "service_worker": "./scripts/background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "assets/high_speed_train.png",
+        "36": "assets/high_speed_train.png",
+        "48": "assets/high_speed_train.png",
+        "128": "assets/high_speed_train.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.bahn.de/buchung/fahrplan/suche"],
+        "js": ["./scripts/contentScript.js"]
+      }
+    ]
+}

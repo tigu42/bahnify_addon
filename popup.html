@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahnify Popout</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="width: 370px;">
+    <header style="border: none; border-bottom: solid 1px rgb(255, 200, 97);">
+        <h2>Bahnify Extension</h2> <h3 style="color: grey">Verspätungsstatistiken für Züge auf www.bahn.de</h3>
+    </header>
+    <div class="centerBody" style="font-size: 13px;">
+        <p>Datenstand ab 21.03.2024</p>
+        <p>Aktuell werden über 130 der größten Bahnhöfe Deutschlands gespeichert</p>
+        <button class="coolButton" id="stationButton">Bahnhöfe zeigen</button>
+        <ul id="stationList">
+            
+        </ul>
+    </div>
+    <footer>
+        <p style="font-size: 13;">
+            Bahnify Extension Version 1.0.0
+        </p>
+        <p id="bahnifyDisclaimer" style="color: grey; font-size: 11px">Die Reisedetails auf www.bahn.de werden durch diese Erweiterung verändert. Die hinzugefügten Statistiken werden 
+            aus den Fahrplan- und Fahrplanänderungsdaten der Timetables API des API Marketplace der Deutschen Bahn erzeugt. Die Daten der Timetables API unterliegen der <a style="color: red;" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+            Creative Commons Attribution 4.0 International (CC BY 4.0)</a> Lizenz. Um eine effiziente Speicherung und einen schnellen Zugriff zu ermöglichen,
+            wurden die Daten in ein stark reduziertes Format gebracht. Dieser veränderte Datensatz weist Schwächen auf: Alternativzüge werden in den Statistiken nicht berücksichtigt. Wenn
+            die Weiterfahrt eines Zuges ausfällt, so kann auch dessen Ankunft als entfallen in die Statistik einfließen.
+            Die Richtigkeit der anderen erzeugten Statistiken kann ebenfalls nicht garantiert werden. Bei Verbindungen, bei denen der Umstieg über Mitternacht geht, kann 
+            zurzeit keine Statistik erzeugt werden. Bahnify speichert keine Nutzungsdaten.</p>
+    </footer>
+    <script src="./scripts/popupScript.js"></script>
+</body>
+</html>
